@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+ <a href="index2.html">Vissza az oldalra!</a>
+<hl>CSS Alapok</hl>
+
+<p>
+   1. Inline style, a kovetkezo div-nek a kék betűszint állítottuk be 
+</p>
+
+<div style="color:blue;">ez a szöveg kék</div>
+
+<p>
+2.Ez is egy inline style,csak több CSS property-t adunk meg
+</p>
+
+<div style="background-color: #0061ff;
+             height: 300px; 
+             text-align: center; 
+             color: white 
+ ">
+ 
+ Ez egy vörös doboz, inline style-al kiszinezve</div>
+
+ 
+ <p>
+  3.CSS class:"pirosdiv CSS classal ellátott html elem,megkapja a style tag-ben lévő.pirosdiv összes CSS property-t
+</p>
+ 
+ <div class="pirosdiv">asdas Ez egy piros div.</div>
+ <div id="lekerekitett">Ennek a széle le van kerekítve</div>
+
+ <style>
+     /*ez egy CSS comment. A style tagek közé nem html hanem CSS kódor kell írni*/
+     /*".pirosdiv"=a . jelenti azt hogy ez egy class div*/
+     /*A pirosdiv class-al ellátott html az alábbi tulajdonságok vonatkoznak:*/
+.pirosdiv{ 
+    background-color: red;
+    height: 120px;
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+}
+/*     Div#=A kettőskerezst id-t jelent css-ben,Div. a pont class-t jelent*/
+ #lekerekitett {
+/*   A padding befelé tolja a tartalmat*/
+     padding: 30px;
+/*     A margin a html elem körül hat*/
+     margin-top: 20px;
+     background-color: black;
+     color:white;
+     border-radius: 20px;
+     height:300px;
+     height:300px;
+     }   
+     
+</style>
+
+
+     <div class="doboz sarga-doboz">Ez itt egy sarga doboz.</div>     
+    <div class="doboz zold-doboz">Ez itt egy zold doboz.</div>     
+    <div class="specialis-doboz">Ez itt egy specialis doboz.</div>     
+    
+<style>
+    .doboz{
+        width: :200px;
+        height: 200px;
+        border: 1px solid black;
+        margin: 20px;
+        color: white;
+    }   
+    .sarga-doboz{
+        background-color: yellow;
+    }
+    .zold-doboz{
+        background-color: green;
+    }
+    #specialis-doboz{
+        background-color: black;
+        border: 10px solid green;
+    }
+</style>
+
+<a href="./03_css_basics.html">Tovább a következő oldalra</a>
+
+
+ 
+</body>
+</html>

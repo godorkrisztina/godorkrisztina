@@ -1,0 +1,36 @@
+/*csslint  order-alphabetical:false*/
+.fo-menu {
+    background-color: aqua;
+    height:80px;
+    
+}
+
+.menupont {
+    height: 40px;
+/*    körbe mindenhol 10px a margin   */
+/*    margin: 10px;*/
+/*
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+*/
+/*    Az előző három sort így tudjuk rövidíteni margónál*/
+/*    fölül,jobbra,alul,balra (óramutatójárásávan megfelelően)*/
+    margin:10px 0 10px 10px;
+    
+    background-color: blue;
+    color: white;
+    display: inline-block;
+/*
+    padding-top: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom
+*/
+/*    AZ előző három sort így tudjuk lerövidíteni (óramutatójárásával megfelelően ) Fülöl,jobbra,alul,balra*/
+    padding: 22px 10px 0 10px;
+}
+.tartalom{
+    background-color: lightgrey;
+    height: 1000px; /*Ez csak azért kell hogy scrollbar megjelenjen*/
+}
