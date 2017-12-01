@@ -1,0 +1,61 @@
+/*csslint  order-alphabetical:false*/
+/*Ezek a fo-meu classon belüli menüpont class-okat választja ki*/
+.fo-menu{
+    background-color: aqua;
+    height:80px;
+    
+}
+
+.fo-menu .menupont {
+    height: 40px;
+/*    körbe mindenhol 10px a margin   */
+/*    margin: 10px;*/
+/*
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+*/
+/*    Az előző három sort így tudjuk rövidíteni margónál*/
+/*    fölül,jobbra,alul,balra (óramutatójárásávan megfelelően)*/
+    margin:10px 0 10px 10px;
+    background-color: blue;
+    color: white;
+    /*Ez a css property (beállítás) megváltoztatja a html elem alapértelmezett működését,jelen esetben*/ 
+    /*Egy block szintű elem (div)-ből inline elemet csinál,de a block tulajdonságait is megőrzi*/
+    /*azaz,reagálni fog az elem a width,és hight paraméterekre*/
+    /*read more: https://www.w3schools.com/css/css*/
+    display: inline-block;
+/*
+    padding-top: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom
+*/
+/*    AZ előző három sort így tudjuk lerövidíteni (óramutatójárásával megfelelően ) Fülöl,jobbra,alul,balra*/
+    padding: 22px 10px 0 10px;
+}
+
+.al-menu{
+     margin-top: 20px;
+    float:right; /*jobbra rendezzük az al-menut*/
+
+}
+.al-menu .menupont{
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: underline;
+  }
+/*ha a menüpont fölé visszük az egeret akkor bekékül az adott menüpont*/
+/*touch-screen-en NINCS hover!*/
+.al-menu .menupont:hover{
+    color: blue;
+}
+
+.tartalom{
+    background-color: lightgrey;
+    margin-top: 40px;
+    height: 1000px; /*Ez csak azért kell hogy scrollbar megjelenjen*/
+/*    bizonyos css property-ket nem ajánlott használni,mert nem minden böngésző ismeri. Ezt a caniuse.com weboldalon ellenőrizhetjük*/
+/*   pl. ez nem működik firefox-ban--> zoom:0.1;*/
+}
+/*#learnabout box-modell https://www.w3schools.com/css/css_boxmodel.asp*/
